@@ -30,6 +30,7 @@ def merge_json_files(directory):
         if filename.endswith('.json'):
             file_path = os.path.join(directory, filename)
             output_file = os.path.join(directory, filename)
+            print(output_file)
             remove_duplicates_and_save(file_path, output_file)
             
             # Read the modified file with duplicates removed
